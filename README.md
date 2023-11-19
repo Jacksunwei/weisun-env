@@ -27,4 +27,5 @@
 ## Set up tmux and ressurent.
 
 - Install tpm following: https://github.com/tmux-plugins/tmux-resurrect#installation-with-tmux-plugin-manager-recommended
+- Copy over `tmux.conf` to `.tmux.conf`
 - Install plugin following: https://github.com/tmux-plugins/tpm#installing-plugins
