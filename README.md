@@ -29,3 +29,19 @@
 - Install tpm following: https://github.com/tmux-plugins/tmux-resurrect#installation-with-tmux-plugin-manager-recommended
 - Copy over `tmux.conf` to `.tmux.conf`
 - Install plugin following: https://github.com/tmux-plugins/tpm#installing-plugins
+
+## Install softwares
+
+### bazel
+
+Download bazelisk and add it to `$HOME/dev-tools/bin`.
+
+TIPS: Optionally, create a versioned folder in `$HOME/dev-tools` and create soft
+link in `$HOME/dev-tools/bin`.
+
+### Install Java OpenJDK
+
+See
+
+- https://www.digitalocean.com/community/tutorials/how-to-install-java-with-apt-on-ubuntu-22-04
+- https://bazel.build/start/java
