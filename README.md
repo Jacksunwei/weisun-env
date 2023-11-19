@@ -4,13 +4,13 @@
 
 1. Install
 
-   ```
+   ```bash
    $ sudo apt install zsh
    ```
 
 2. Set as default
 
-   ```
+   ```bash
    $ chsh -s /usr/bin/zsh
    ```
 3. Install oh-my-zsh.
