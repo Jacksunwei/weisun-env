@@ -18,10 +18,13 @@
 
    https://ohmyz.sh/#install
 
-## Install basic editors - subl and vscode
+## Install basic editors - sublime and vscode
 
-- subl: https://www.sublimetext.com/docs/linux_repositories.html
+- sublime: https://www.sublimetext.com/docs/linux_repositories.html
 - vscode: download at [here](https://code.visualstudio.com/download#) and
   follow the instructions.
 
 ## Set up tmux and ressurent.
+
+- Install tpm following: https://github.com/tmux-plugins/tmux-resurrect#installation-with-tmux-plugin-manager-recommended
+- Install plugin following: https://github.com/tmux-plugins/tpm#installing-plugins
