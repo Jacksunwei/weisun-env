@@ -56,3 +56,29 @@ link in `$HOME/dev-tools/bin`.
    ```
    export JAVA_HOME="$(dirname $(dirname $(realpath $(which javac))))"
    ```
+
+### Other utility softwares
+
+```
+sudo apt install \
+  vim \
+  git git-lfs \
+  apt-transport-https \
+  run-one \
+  htop \
+  xclip \
+  caffeine
+```
+
+Config git user
+
+```
+git config --global user.name "Jack Sun"
+git config --global user.email "jacksunwei@gmail.com"
+```
+
+Other ones that needs to be installed from the website
+
+- atlasvpn: https://atlasvpn.com/download
+- github cli: https://cli.github.com/
+- sublime-text: https://www.sublimetext.com/docs/linux_repositories.html#apt
