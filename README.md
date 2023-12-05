@@ -18,6 +18,8 @@
 
    https://ohmyz.sh/#install
 
+4. Copy over `zshrc` to `~/.zshrc`.
+
 ## Install basic editors - sublime and vscode
 
 - sublime: https://www.sublimetext.com/docs/linux_repositories.html
@@ -26,9 +28,15 @@
 
 ## Set up tmux and ressurent.
 
-- Install tpm following: https://github.com/tmux-plugins/tmux-resurrect#installation-with-tmux-plugin-manager-recommended
-- Copy over `tmux.conf` to `.tmux.conf`
-- Install plugin following: https://github.com/tmux-plugins/tpm#installing-plugins
+- Install tmux
+
+  ```
+  sudo apt install tmux tmux-plugin-manager
+  ```
+
+- Copy over `tmux.conf` to `~/.tmux.conf`
+
+- Install tpm per [this guide](https://github.com/tmux-plugins/tpm#installation).
 
 ## Install softwares
 
@@ -41,7 +49,11 @@ link in `$HOME/dev-tools/bin`.
 
 ### Install Java OpenJDK
 
-See
+1. Follow [digital ocean's guide](https://www.digitalocean.com/community/tutorials/how-to-install-java-with-apt-on-ubuntu-22-04) to install openjdk-11.
 
-- https://www.digitalocean.com/community/tutorials/how-to-install-java-with-apt-on-ubuntu-22-04
-- https://bazel.build/start/java
+1. Follow [bazel-java start guide](https://bazel.build/start/java#install_the_jdk) to configure `JAVA_HOME`. Basically, add the following to `.zshrc`.
+
+   ```
+   export JAVA_HOME="$(dirname $(dirname $(realpath $(which javac))))"
+
+   ```
