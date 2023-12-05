@@ -55,5 +55,4 @@ link in `$HOME/dev-tools/bin`.
 
    ```
    export JAVA_HOME="$(dirname $(dirname $(realpath $(which javac))))"
-
    ```
