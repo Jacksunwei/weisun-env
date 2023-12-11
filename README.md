@@ -20,6 +20,10 @@
 
 4. Copy over `zshrc` to `~/.zshrc`.
 
+   ```
+   cp zshrc ~/.zshrc
+   ```
+
 ## Install basic editors - sublime and vscode
 
 - sublime: https://www.sublimetext.com/docs/linux_repositories.html
@@ -35,6 +39,10 @@
   ```
 
 - Copy over `tmux.conf` to `~/.tmux.conf`
+
+  ```
+  cp tmux.conf ~/.tmux.conf
+  ```
 
 - Install tpm per [this guide](https://github.com/tmux-plugins/tpm#installation).
 
