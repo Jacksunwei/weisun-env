@@ -90,3 +90,19 @@ Other ones that needs to be installed from the website
 - atlasvpn: https://atlasvpn.com/download
 - github cli: https://cli.github.com/
 - sublime-text: https://www.sublimetext.com/docs/linux_repositories.html#apt
+
+### Other software to install
+
+- Fan Control: 
+  - ```sudo apt install lm-sensors fancontrol```
+  - nct6687 driver: https://github.com/Fred78290/nct6687d
+  - CoolerControl: https://gitlab.com/coolercontrol/coolercontrol
+- Monitor
+  - GNOME Extension Manager: 
+    
+    ```
+    sudo apt install gnome-shell-extension-manager
+    ```
+
+  - Vitals (for cpu and system fans, etc)
+  - NVIDIA GPU Stats Tool (for NVIDIA GPUs)
