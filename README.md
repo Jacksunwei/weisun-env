@@ -94,7 +94,7 @@ Other ones that needs to be installed from the website
 ### Other software to install
 
 - Fan Control: 
-  - ```sudo apt install lm-sensors fancontrol```
+  - `sudo apt install lm-sensors fancontrol`
   - nct6687 driver: https://github.com/Fred78290/nct6687d
   - CoolerControl: https://gitlab.com/coolercontrol/coolercontrol
 - Monitor
