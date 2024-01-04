@@ -106,3 +106,45 @@ Other ones that needs to be installed from the website
 
   - Vitals (for cpu and system fans, etc)
   - NVIDIA GPU Stats Tool (for NVIDIA GPUs)
+
+## Language-specific set up.
+
+### Python
+
+#### Install pyink
+
+1. Create a dedicated conda env
+   ```
+   conda create -n lint_env python=3.11
+   pip install pyink
+   ```
+1. Install vscode extension - [black formatter](https://marketplace.visualstudio.com/items?itemName=ms-python.black-formatter) per [pyink README.md](https://github.com/google/pyink)
+1. Configure vscode extension
+   ```
+   "[python]": {
+       "editor.defaultFormatter": "ms-python.black-formatter"
+   },
+   ...
+   "black-formatter.path": [
+       "/home/jacks/dev-tools/miniconda3/envs/lint_env/bin/pyink"
+   ],
+   "black-formatter.args": [
+       "--pyink-indentation=2"
+   ],
+   "black-formatter.showNotifications": "always",
+   ```
+
+#### Configure pylint to be Google style
+
+1. Clone google style into `~/dev-tools`
+   ```
+   cd ~/dev-tools
+   gh repo clone google/styleguide google-styleguide
+   ```
+1. Install vscode extension: [pylance](https://marketplace.visualstudio.com/items?itemName=ms-python.vscode-pylance)
+1. Configure pylance extension: 
+   ```
+   "pylint.args": [
+       "--rcfile=~/dev-tools/google-styleguide/pylintrc"
+   ]
+   ```
