@@ -111,7 +111,7 @@ Other ones that needs to be installed from the website
 
 ### Python
 
-#### Install pyink
+#### Install pyink for python formatter
 
 1. Create a dedicated conda env
    ```
@@ -134,7 +134,7 @@ Other ones that needs to be installed from the website
    "black-formatter.showNotifications": "always",
    ```
 
-#### Configure pylint to be Google style
+#### Install pylint to be Google style for linting
 
 1. Clone google style into `~/dev-tools`
    ```
