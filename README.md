@@ -148,3 +148,19 @@ Other ones that needs to be installed from the website
        "--rcfile=~/dev-tools/google-styleguide/pylintrc"
    ]
    ```
+
+#### Install CUDA
+
+NOTE: prefer to use 11.8 for compability reasons.
+
+Check out [CUDA Quick Start Guide](https://docs.nvidia.com/cuda/cuda-quick-start-guide/index.html) 
+for installing guide.
+
+After installation, add the following to `~/.zshrc`.
+
+```
+# CUDA 118 config.
+export PATH=/usr/local/cuda-11.8/bin${PATH:+:${PATH}}
+export LD_LIBRARY_PATH=/usr/local/cuda-11.8/lib64${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
+export BNB_CUDA_VERSION=118;
+```
