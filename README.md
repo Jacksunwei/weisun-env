@@ -95,6 +95,7 @@ Other ones that needs to be installed from the website
 - Fan Control: 
   - `sudo apt install lm-sensors fancontrol`
   - nct6687 driver, build with dkms: 
+   - `sudo apt install dh-dkms`
    - https://github.com/Fred78290/nct6687d?tab=readme-ov-file#build-with-dkms
    - https://github.com/Fred78290/nct6687d?tab=readme-ov-file#loadprob-sensors-on-boot
   - CoolerControl: https://gitlab.com/coolercontrol/coolercontrol
