@@ -133,7 +133,6 @@ Install to `~/dev-tools/anaconda3`.
    "[python]": {
        "editor.defaultFormatter": "ms-python.black-formatter"
    },
-   ...
    "black-formatter.path": [
        "/home/jacks/dev-tools/anaconda3/envs/lint_env/bin/pyink"
    ],
