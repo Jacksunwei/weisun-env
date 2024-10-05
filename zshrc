@@ -107,3 +107,6 @@ alias tkss="tmux kill-session -t"
 alias bb="bazel build"
 alias btt="bazel test"
 alias br="bazel run"
+
+# Allows crontab to connect X server via local network to start window.
+xhost +local:
