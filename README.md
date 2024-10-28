@@ -1,5 +1,6 @@
 # Set up instructions
 
+
 ## Set up zsh
 
 1. Install
@@ -115,17 +116,15 @@ Other ones that needs to be installed from the website
 
 ### Python
 
-#### Install Anaconda
-
-Install to `~/dev-tools/anaconda3`.
-
 #### Install pyink for python formatter
 
-1. Create a dedicated conda env
+1. Create a dedicated python venv
 
    ```bash
-   conda create -n lint_env python=3.11
-   pip install pyink
+   python3 -m venv ~/dev-tools/py_tools
+   source ~/dev-tools/py_tools/bin/activate
+   pip install -r py_tools/requirements.txt
+   pip install --upgrade pip
    ```
 
 1. Install vscode extension - [black formatter](https://marketplace.visualstudio.com/items?itemName=ms-python.black-formatter) per [pyink README.md](https://github.com/google/pyink)
@@ -136,7 +135,7 @@ Install to `~/dev-tools/anaconda3`.
        "editor.defaultFormatter": "ms-python.black-formatter"
    },
    "black-formatter.path": [
-       "/home/jacks/dev-tools/anaconda3/envs/lint_env/bin/pyink"
+      "${env:HOME}/dev-tools/py_tools/bin/pyink"
    ],
    "black-formatter.args": [
        "--pyink-indentation=2"
@@ -158,8 +157,8 @@ Install to `~/dev-tools/anaconda3`.
 
    ```json
    "pylint.args": [
-       "--rcfile=~/dev-tools/google-styleguide/pylintrc"
-   ]
+      "--rcfile=${env:HOME}/dev-tools/google-styleguide/pylintrc"
+   ],
    ```
 
 #### Install CUDA
